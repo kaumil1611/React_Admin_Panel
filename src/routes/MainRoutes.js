@@ -4,7 +4,7 @@ import Loadable from 'ui-component/Loadable';
 import { Navigate } from 'react-router-dom';
 import isAuthenticated from '../utils/auth';
 import RednderLayout from 'layout';
-import ViewUser from 'views/pages/authentication/users/inde';
+import ViewUser from 'views/pages/authentication/users';
 
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
