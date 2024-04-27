@@ -16,7 +16,7 @@ import { SET_MENU } from 'store/actions';
 
 // assets
 import { IconChevronRight } from '@tabler/icons-react';
-import MinimalLayout from 'layout/MinimalLayout';
+// import MinimalLayout from 'layout/MinimalLayout';
 
 // styles
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' && prop !== 'theme' })(({ theme, open }) => ({
@@ -64,10 +64,6 @@ const MainLayout = () => {
     dispatch({ type: SET_MENU, opened: !leftDrawerOpened });
   };
 
-  const isAuthentication = false;
-  if (!isAuthentication) {
-    return <MinimalLayout />
-  } else {
     return (
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
@@ -99,7 +95,6 @@ const MainLayout = () => {
         <Customization />
       </Box>
     );
-  }
  
 };
 
